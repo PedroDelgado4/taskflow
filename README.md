@@ -1,16 +1,69 @@
-# React + Vite
+# TaskFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de gestión de tareas construida con React.
+Proyecto enfocado en arquitectura limpia, manejo de estado y persistencia local.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Ver aplicación online](LINK_A_VERCEL)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Objetivo del proyecto
 
-## Expanding the ESLint configuration
+Desarrollar una aplicación frontend profesional aplicando:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Componentización correcta
+- Manejo de estado con hooks
+- Custom hook para separación de lógica
+- Persistencia con localStorage
+- Filtros derivados sin duplicar estado
+- UI limpia y responsive
+
+---
+
+## Stack
+
+- React (Vite)
+- JavaScript ES6
+- CSS moderno (Flexbox)
+- LocalStorage API
+
+---
+
+## Funcionalidades
+
+- Crear tareas
+- Eliminar tareas
+- Marcar como completadas
+- Filtros (All / Active / Completed)
+- Contador dinámico
+- Limpiar completadas
+- Persistencia automática
+
+---
+
+## Arquitectura
+
+- `useTasks` custom hook para encapsular lógica
+- Componentes separados por responsabilidad
+- Estado derivado en vez de duplicado
+- UI desacoplada de la lógica
+
+---
+
+## Estructura
+
+src/
+- components/
+- hooks/
+- pages/
+- styles/
+
+---
+
+## Mejoras futuras
+
+- Animaciones suaves
+- Tests unitarios
+- Backend real con API
