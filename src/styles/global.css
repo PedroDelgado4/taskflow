@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía base */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Contenedor principal */
+.dashboard {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Formulario */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.task-form button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.task-form button:hover {
+  background-color: #4338ca;
+}
+
+/* Lista */
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Item individual */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  border: 1px solid #eee;
+}
+
+/* Texto tarea */
+.task-text {
+  cursor: pointer;
+}
+
+/* Tarea completada */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Botón eliminar */
+.task-item button {
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.tasks-counter{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+
+.filter-buttons{
+  display: flex;
+  gap: 8px;
+}
+
+.filter-buttons button,
+.filters > button {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.filter-buttons button:hover,
+.filters > button:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-buttons button.active-filter{
+  background-color: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
+}
+
+.clear-button {
+  border: 1px solid #dc2626;
+  color: #dc2626;
+}
+
+.clear-button:hover {
+  border-color: #dc2626;
+}
